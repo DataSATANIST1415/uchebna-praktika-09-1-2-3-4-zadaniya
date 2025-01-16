@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head>
+<title>Вход - ООО "Тензор-РТ"</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/login-user.css">
+</head>
+<body>
+    <header>
+        <p><img src="images/LOGO2.png" width="208" height="52" alt="Tenzor-RT Logo"></p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.php">Главная</a></li>
+            <li><a href="IzdeliaKatalog.php">Изделия</a></li>
+            <li><a href="login-user.html">войти</a></li>
+            <li><a href="registr-user.html">зарегистрироваться</a></li>
+            <li><a href="order-history.html">история заказов</a></li>
+            <li><a href="basket.html">корзина</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Вход в личный кабинет</h2>
+        <form action="https://Tenzor-rt.com/process_login.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+            
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required="">
+            
+            <input type="submit" value="Войти">
+        </form>
+        <div class="forgot-password">
+            <a href="https://Tenzor-rt.com/forgot_password.php">Забыли пароль?</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2023 ООО "Тензор-РТ". Все права защищены.</p>
+    </footer>
+</body></html>

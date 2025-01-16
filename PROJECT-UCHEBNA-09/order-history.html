@@ -1,0 +1,104 @@
+<html lang="ru">
+<head>
+    <title>История заказов - Тензор-РТ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/orders.css">
+</head>
+<body>
+    <header>
+        <p><img src="images/LOGO2.png" width="208" height="52" alt="Tenzor-RT Logo"></p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.php">Главная</a></li>
+            <li><a href="IzdeliaKatalog.php">Изделия</a></li>
+            <li><a href="login-user.html">войти</a></li>
+            <li><a href="registr-user.html">зарегистрироваться</a></li>
+            <li><a href="order-history.html">история заказов</a></li>
+            <li><a href="basket.html">корзина</a></li>
+        </ul>
+    </nav>
+
+    <main class="orders-container">
+        <h1>История заказов</h1>
+        
+        <div class="orders-list">
+            <div class="order-card">
+                <div class="order-header">
+                    <div class="order-number">
+                        <h3>Заказ #1234</h3>
+                        <span class="order-date">20.03.2024</span>
+                    </div>
+                    <span class="order-status delivered">Доставлен</span>
+                </div>
+                
+                <div class="order-items">
+                    <div class="order-item">
+                        <div class="item-image">
+                            <svg width="80" height="80" viewBox="0 0 80 80">
+                                <rect width="80" height="80" fill="#eee"/>
+                                <text x="50%" y="50%" text-anchor="middle" fill="#999">Фото</text>
+                            </svg>
+                        </div>
+                        <div class="item-details">
+                            <h4>Термоконтейнер малый ТК-5</h4>
+                            <p>Количество: 1</p>
+                            <span class="item-price">15 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-footer">
+                    <div class="order-total">
+                        <span>Итого:</span>
+                        <span class="total-amount">15 500 ₽</span>
+                    </div>
+                    <button class="reorder-button">Повторить заказ</button>
+                </div>
+            </div>
+
+            <div class="order-card">
+                <div class="order-header">
+                    <div class="order-number">
+                        <h3>Заказ #1233</h3>
+                        <span class="order-date">15.03.2024</span>
+                    </div>
+                    <span class="order-status processing">В обработке</span>
+                </div>
+                
+                <div class="order-items">
+                    <div class="order-item">
+                        <div class="item-image">
+                            <svg width="80" height="80" viewBox="0 0 80 80">
+                                <rect width="80" height="80" fill="#eee"/>
+                                <text x="50%" y="50%" text-anchor="middle" fill="#999">Фото</text>
+                            </svg>
+                        </div>
+                        <div class="item-details">
+                            <h4>Аккумуляторная батарея АБ-100</h4>
+                            <p>Количество: 2</p>
+                            <span class="item-price">25 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-footer">
+                    <div class="order-total">
+                        <span>Итого:</span>
+                        <span class="total-amount">50 500 ₽</span>
+                    </div>
+                    <button class="reorder-button" disabled>Повторить заказ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 ООО "Тензор-РТ". Все права защищены.</p>
+    </footer>
+
+    <script src="js/orders.js" defer></script>
+</body>
+</html>

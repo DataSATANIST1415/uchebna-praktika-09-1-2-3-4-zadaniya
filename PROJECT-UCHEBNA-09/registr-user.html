@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head>
+<title>Регистрация - ООО """Электроника-ЛТ"""</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/registr-user.css">
+</head>
+<body>
+    <header>
+        <p><img src="images/LOGO2.png" width="208" height="52" alt="Tenzor-RT Logo"></p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.php">Главная</a></li>
+            <li><a href="IzdeliaKatalog.php">Изделия</a></li>
+            <li><a href="login-user.html">войти</a></li>
+            <li><a href="registr-user.html">зарегистрироваться</a></li>
+            <li><a href="order-history.html">история заказов</a></li>
+            <li><a href="basket.html">корзина</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+    <h2>Регистрация</h2>
+    <form action="https://Tenzor-rt.com/process_registration.php" method="post">
+        <label for="fullname">ФИО:</label>
+        <input type="text" id="fullname" name="fullname" required="">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="">
+        
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required="">
+        
+        <label for="confirm_password">Подтвердите пароль:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required="">
+        
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</main>
+    
+    <footer style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #007bff; color: #ffffff; text-align: center; padding: 1rem;">
+    <p>© 2023 ООО "Тензор-РТ". Все права защищены.</p>
+</footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            var password = document.getElementById('password');
+            var confirm_password = document.getElementById('confirm_password');
+            
+            if (password.value != confirm_password.value) {
+                e.preventDefault();
+                alert('Пароли не совпадают!');
+            }
+        });
+    </script>
+
+</body></html>
